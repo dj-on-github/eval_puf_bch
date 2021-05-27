@@ -1,0 +1,10 @@
+This program computes the entropy in a PUF array following HDM and Code offset masking with BCH.
+It requires the underlying per bit entropy from the array (default 0.9), the HDM percentage (default 20%) and the HDM targeting factor which is the percentage of unstable bits captured by the HDM (default 0.8).
+Currently the settings are in the code and you will need to edit them for your array.
+I'll add command line options sometime.
+
+It computes the entropy and reliability ovar all combinations of array_size in [], BER from 0 to 16% in steps of 1% and every narrow sense BCH code up to n=1023.
+The output is in CSV format.
+
+David Johnston
+
